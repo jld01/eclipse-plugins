@@ -16,7 +16,7 @@ jobs:
       uses: actions/setup-java@v4
       with:
         java-version: 11
-		distribution: temurin
+        distribution: temurin
     - name: Setup Maven
       run: echo "MAVEN_OPTS='-Xmx2048m'" > ~/.mavenrc
     - name: Cache maven repo
