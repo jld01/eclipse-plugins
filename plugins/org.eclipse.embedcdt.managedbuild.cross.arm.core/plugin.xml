@@ -2325,7 +2325,7 @@
 					<enumeratedOptionValue
 						command="-std=iso9899:199409"
 						id="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.std.iso9899.1994090"
-						name="%option.c.compiler.std.iso9899.199409">
+						name="%option.c.compiler.std.iso9899.1994090">
 					</enumeratedOptionValue>
 					<enumeratedOptionValue
 						command="-std=gnu90"
