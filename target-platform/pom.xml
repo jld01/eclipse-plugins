@@ -19,9 +19,7 @@
 		<relativePath>../parent/pom.xml</relativePath>
 	</parent>
 
-	<groupId>org.eclipse.embedcdt</groupId>
 	<artifactId>org.eclipse.embedcdt.target-platform</artifactId>
-	<version>6.6.1-SNAPSHOT</version>
 	<packaging>eclipse-target-definition</packaging>
 
 </project>
