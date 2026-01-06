@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry exported="true" kind="lib" path="lib/org.jsoup_1.7.2.v201411291515.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/json-simple-1.1.1.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/antlr-runtime-3.5.2.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/jackson-annotations-2.9.9.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/jackson-core-2.9.9.jar"/>

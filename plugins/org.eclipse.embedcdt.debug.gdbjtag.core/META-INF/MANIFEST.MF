@@ -32,4 +32,6 @@ Export-Package: org.eclipse.embedcdt.debug.gdbjtag.core,
  org.eclipse.embedcdt.debug.gdbjtag.core.services,
  org.eclipse.embedcdt.debug.gdbjtag.core.viewmodel.peripheral,
  org.eclipse.embedcdt.internal.debug.gdbjtag.core;x-friends:="org.eclipse.embedcdt.debug.gdbjtag.ui"
+Import-Package: org.json.simple;version="1.1.1",
+ org.json.simple.parser;version="1.1.1"
 Automatic-Module-Name: org.eclipse.embedcdt.debug.gdbjtag.core

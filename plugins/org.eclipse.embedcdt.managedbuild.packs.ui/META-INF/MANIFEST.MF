@@ -30,4 +30,6 @@ Bundle-Localization: plugin
 Export-Package: org.eclipse.embedcdt.internal.managedbuild.packs.ui;x-internal:=true,
  org.eclipse.embedcdt.internal.managedbuild.packs.ui.views;x-internal:=true,
  org.eclipse.embedcdt.managedbuild.packs.ui
+Import-Package: org.json.simple;version="1.1.1",
+ org.json.simple.parser;version="1.1.1"
 Automatic-Module-Name: org.eclipse.embedcdt.managedbuild.packs.ui

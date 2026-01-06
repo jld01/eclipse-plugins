@@ -112,6 +112,7 @@
    <feature id="org.eclipse.embedcdt.debug.gdbjtag.qemu.source">
       <category name="org.eclipse.embedcdt.category.source"/>
    </feature>
+   <bundle id="com.googlecode.json-simple"/>
    <category-def name="org.eclipse.embedcdt.category" label="Embedded C/C++ Cross Development Tools"/>
    <category-def name="org.eclipse.embedcdt.category.source" label="Embedded C/C++ Cross Development Tools Developer Resources"/>
 </site>
