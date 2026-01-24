@@ -5,9 +5,15 @@ pipeline {
         }
     }
     tools {
+        // https://github.com/eclipse-cbi/jiro/wiki/Tools-(JDK,-Maven,-Ant)#apache-maven
+        // https://eclipse.dev/cbi/jiro/Tools/#apache-maven
         maven 'apache-maven-latest'
-        jdk 'adoptopenjdk-hotspot-jdk11-latest'
+
+        // https://github.com/eclipse-cbi/jiro/wiki/Tools-(JDK,-Maven,-Ant)#eclipse-temurin
+        // https://eclipse.dev/cbi/jiro/Tools/#eclipse-temurin
+        jdk 'temurin-jdk21-latest'
     }
+
     stages {
         stage('Build') {
             steps {
