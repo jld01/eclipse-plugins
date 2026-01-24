@@ -15,17 +15,27 @@ pipeline {
     }
 
     stages {
+        stage('initialize PGP') {
+            steps {
+                withCredentials([file(credentialsId: 'secret-subkeys.asc', variable: 'KEYRING')]) {
+                    sh 'gpg --batch --import "${KEYRING}"'
+                    sh 'for fpr in $(gpg --list-keys --with-colons  | awk -F: \'/fpr:/ {print $10}\' | sort -u); do echo -e "5\ny\n" |  gpg --batch --command-fd 0 --expert --edit-key ${fpr} trust; done'
+                }
+            }
+        }
         stage('Build') {
             steps {
-
-                sh "mvn \
-                        --batch-mode \
-                        --show-version \
-                        clean verify \
-                        -P production \
-                        -Dmaven.repo.local=/home/jenkins/.m2/repository \
-                        --settings /home/jenkins/.m2/settings.xml \
-                "
+                withCredentials([string(credentialsId: 'gpg-passphrase', variable: 'KEYRING_PASSPHRASE')]) {
+                    sh "mvn \
+                            --batch-mode \
+                            --show-version \
+                            clean verify \
+                            -Dgpg.passphrase="${KEYRING_PASSPHRASE}"  \
+                            -P production \
+                            -Dmaven.repo.local=/home/jenkins/.m2/repository \
+                            --settings /home/jenkins/.m2/settings.xml \
+                    "
+                }
             }
         }
         stage('Upload') {
