@@ -112,6 +112,9 @@
    <feature id="org.eclipse.embedcdt.debug.gdbjtag.qemu.source">
       <category name="org.eclipse.embedcdt.category.source"/>
    </feature>
+   <bundle id="com.fasterxml.jackson.core.jackson-annotations"/>
+   <bundle id="com.fasterxml.jackson.core.jackson-core"/>
+   <bundle id="com.fasterxml.jackson.core.jackson-databind"/>
    <bundle id="com.googlecode.json-simple"/>
    <bundle id="org.antlr.runtime"/>
    <category-def name="org.eclipse.embedcdt.category" label="Embedded C/C++ Cross Development Tools"/>

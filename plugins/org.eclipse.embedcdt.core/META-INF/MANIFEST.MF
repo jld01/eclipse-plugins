@@ -491,7 +491,9 @@ Export-Package: org.eclipse.embedcdt.core,
    org.eclipse.embedcdt.managedbuild.cross.riscv.core,
    org.eclipse.embedcdt.packs.core,
    org.eclipse.embedcdt.templates.core"
-Import-Package: org.antlr.runtime;version="[3.5.0,4.0.0)",
+Import-Package: com.fasterxml.jackson.core;version="[2.21.0,3.0.0)",
+ com.fasterxml.jackson.databind;version="[2.21.0,3.0.0)",
+ org.antlr.runtime;version="[3.5.0,4.0.0)",
  org.antlr.runtime.debug;version="[3.5.0,4.0.0)",
  org.antlr.runtime.misc;version="[3.5.0,4.0.0)",
  org.antlr.runtime.tree;version="[3.5.0,4.0.0)",
@@ -504,10 +506,7 @@ Require-Bundle: org.eclipse.cdt.core;bundle-version="7.0.0",
  org.eclipse.core.variables;bundle-version="3.4.800",
  org.eclipse.debug.core;bundle-version="3.16.0",
  org.eclipse.core.expressions;bundle-version="3.7.0"
-Bundle-ClassPath: lib/jackson-annotations-2.9.9.jar,
- lib/jackson-core-2.9.9.jar,
- lib/jackson-databind-2.9.9.3.jar,
- lib/ST4-4.0.8.jar,
+Bundle-ClassPath: lib/ST4-4.0.8.jar,
  lib/org.jsoup_1.7.2.v201411291515.jar,
  .
 Automatic-Module-Name: org.eclipse.embedcdt.core
