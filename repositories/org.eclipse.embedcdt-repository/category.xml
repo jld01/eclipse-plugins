@@ -117,6 +117,7 @@
    <bundle id="com.fasterxml.jackson.core.jackson-databind"/>
    <bundle id="com.googlecode.json-simple"/>
    <bundle id="org.antlr.runtime"/>
+   <bundle id="org.jsoup"/>
    <category-def name="org.eclipse.embedcdt.category" label="Embedded C/C++ Cross Development Tools"/>
    <category-def name="org.eclipse.embedcdt.category.source" label="Embedded C/C++ Cross Development Tools Developer Resources"/>
 </site>

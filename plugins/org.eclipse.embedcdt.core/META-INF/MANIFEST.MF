@@ -498,7 +498,9 @@ Import-Package: com.fasterxml.jackson.core;version="[2.21.0,3.0.0)",
  org.antlr.runtime.misc;version="[3.5.0,4.0.0)",
  org.antlr.runtime.tree;version="[3.5.0,4.0.0)",
  org.json.simple;version="1.1.1",
- org.json.simple.parser;version="1.1.1"
+ org.json.simple.parser;version="1.1.1",
+ org.jsoup;version="[1.22.0,2.0.0)",
+ org.jsoup.nodes;version="[1.22.0,2.0.0)"
 Require-Bundle: org.eclipse.cdt.core;bundle-version="7.0.0",
  org.eclipse.cdt.debug.core;bundle-version="8.5.0",
  org.eclipse.cdt.managedbuilder.core;bundle-version="9.0.0",
@@ -507,6 +509,5 @@ Require-Bundle: org.eclipse.cdt.core;bundle-version="7.0.0",
  org.eclipse.debug.core;bundle-version="3.16.0",
  org.eclipse.core.expressions;bundle-version="3.7.0"
 Bundle-ClassPath: lib/ST4-4.0.8.jar,
- lib/org.jsoup_1.7.2.v201411291515.jar,
  .
 Automatic-Module-Name: org.eclipse.embedcdt.core
