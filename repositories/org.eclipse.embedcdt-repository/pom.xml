@@ -33,4 +33,19 @@
 	<name>Embedded C/C++ Repository</name>
 
 	<url>https://projects.eclipse.org/projects/iot.embed-cdt/</url>
+
+	<profiles>
+		<profile>
+			<id>production</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.eclipse.tycho</groupId>
+						<artifactId>tycho-gpg-plugin</artifactId>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
+
 </project>
