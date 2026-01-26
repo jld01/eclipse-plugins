@@ -26,7 +26,7 @@ pipeline {
         stage('Build') {
             steps {
                 withCredentials([string(credentialsId: 'gpg-passphrase', variable: 'KEYRING_PASSPHRASE')]) {
-                    sh "mvn \
+                    sh '''mvn \
                             --batch-mode \
                             --show-version \
                             clean verify \
@@ -34,7 +34,7 @@ pipeline {
                             -P production \
                             -Dmaven.repo.local=/home/jenkins/.m2/repository \
                             --settings /home/jenkins/.m2/settings.xml \
-                    "
+                    '''
                 }
             }
         }
