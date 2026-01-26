@@ -301,7 +301,7 @@ then
   AP="$(cd "$(dirname "${P}")"; pwd)/$(basename "${P}")"
 
   mv -f "${ARCHIVE_PREFIX}-SNAPSHOT.zip" "${AP}"
-  (cd "${ARCHIVE_FOLDER}"; shasum -a 256 -p "${AP}" >"${AP}.sha")
+  (cd "${ARCHIVE_FOLDER}"; shasum -a 256 --binary "${AP}" >"${AP}.sha")
 
   echo
   echo "Archive available from \"${AP}\""

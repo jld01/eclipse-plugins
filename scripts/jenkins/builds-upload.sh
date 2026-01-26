@@ -41,7 +41,7 @@ _EOF_
 
   ${SCP} -v "${ARCHIVE_NAME}.zip" "${SSHUSER}:${UPDATES_DEST}-temp/${ARCHIVE_NAME}.zip"
 
-  shasum -a 256 -p "${ARCHIVE_NAME}.zip" >"${ARCHIVE_NAME}.zip.sha"
+  shasum -a 256 --binary "${ARCHIVE_NAME}.zip" >"${ARCHIVE_NAME}.zip.sha"
   ${SCP} -v "${ARCHIVE_NAME}.zip.sha" "${SSHUSER}:${UPDATES_DEST}-temp/${ARCHIVE_NAME}.zip.sha"
 )
 
